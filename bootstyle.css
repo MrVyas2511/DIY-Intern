@@ -1,218 +1,384 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-/* HTML Properites */
-html {
-    scroll-behavior: smooth;
-  }
-  /* Font */
+<!doctype html>
+<html lang="en">
 
-  /* Title 1*/
-.f1{
-    font-family: 'Fredoka One', cursive;
-}
-/* Title 2 */
-.f2{
-    font-family: 'Tourney', cursive;
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-}
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  /* Navbar */
-nav{
-    padding-left: 50px;
-}
-.nav-item{
-    align-items: center;  
-}
-.logo{
-   
-        text-align: center;
-    font-weight: bold;
-}
-.navbar-light .nav-item .nav-link:hover  {
-  background: #6f77e7;
-  color: #f1f1ee;
-}
-#home::before{
-    content: "";
-    background: url('./img/bg.png') no-repeat center center/cover;
-    position: absolute;
-    width: 100%;
-    height: 115vh;
-    top: 0px;
-    left: 0%;
-    z-index: -1;
-    opacity: 0.5;
-}
-
-#home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 110vh;
-    width: 100%;
-}
-
-#home img{
-    position: relative;
-    top: -10%;
-    right: -15%;
-    /* margin: 100px; */
-}
-.content h1{
-     padding-bottom: 20px;
-    font-size: 3rem;
-    font-weight: 800;
-}
-.content p{
-    font-family: 'Source Serif Pro', serif;
-    padding-bottom: 20px;
-    font-size: large;
-}
-.content button{
-    padding: 10px;
-    font-weight: 900;
-    border-radius: 30px;
-    border: none;
-    box-shadow: 5px 5px #6f77e7;
-    background-color: #ECAF12;
-}
-
-.content button:hover{
-    background-color: #6f77e7;
-    box-shadow: none;
-    padding: 15px;
-}
-.content{
-    position: relative;
-    left: 0%;
-    top: -10%;
-    width: 20%;
-    /* display: flex; */
-    /* flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-}
-
-/* About Us */
+    <!-- External StyleSheet -->
+    <link rel="stylesheet" href="bootstyle.css">
 
 
-#about img{
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 
-    border-radius: 70px;
-
-} 
-
-.aboutcontent{
-    padding: 40px 10px;
-
-}
-.aboutcontent p{
-    font-family: 'Rokkitt', serif;
-    font-size: 1.3rem;
-}
-
-/* Features CSS */
-
-#Features{
-    background-color: #e2ffd7;
-    /* height: 80vh; */
-    
-}
-
-.Featurescard{
-    box-shadow: 10px 10px 10px #c7aeaf;
-    font-weight: 900;
-}
-
-.Featurescard1{
-    background-color: #07E21D;
-
-}
-.Featurescard2{
-    background-color: #08F3F3;
-
-}
-.Featurescard3{
-    background-color: #F9A150;
-
-}
-.Featurescard4{
-    background-color: #08F3F3;
-
-}
+<body>
 
 
-/* FAQs section */
+    <!-- Navabar section  -->
+    <nav class="sticky-top navbar navbar-expand-lg navbar-light  ">
+        <div class="container-fluid d-flex justify-content-between ">
+            <a class="navbar-brand logo fs-2 f2" href="#">
+                <img src="./img/logo.png" alt="" width="60" height="40">
+                DIY-Portfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center fs-5 justify-content-end" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mb-lg-0 fs-5 f2">
+                    <li class="nav-item ">
+                        <a class="nav-link active px-3 rounded-pill " aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link px-3 rounded-pill" href="#about">About</a>
+                    </li>
+                    <li class="nav-item px-3 ">
+                        <a class="nav-link px-3 rounded-pill " href="#Features">Features</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link px-3 rounded-pill" href="#">Team</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link px-3 rounded-pill " href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <button type="button" class="btn btn-primary py-2 px-4 rounded-pill ">Contact</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Sectoin -->
+    <section id="home">
+        <div class="content">
+            <h1>Have Portfolio Your Way</h1>
+            <p >We help build your portfolio to make you stand out without any hasssle</p>
+            <button> Create Portfolio </button>
+        </div>
+        <img src="./img/Frame.png" class="img-fluid py-3" width="400px" height="400px" alt="">
+    </section>
 
 
-#FAQs{
-    background-color: #f6e6e6;
-}
 
-/* Contact section */
+    <!-- About Section -->
+    <section id="about" class="container">
 
-#contactForm{
-    max-width: 500px;
-    border-radius: 50px;
-    background-color: #d198ff;
-    padding: 30px 50px;
-}
+        <h1 class="text-center f1">About Us</h1>
+        <div class="container d-flex-column justify-content-center text-center">
 
-#Contact{
-    /* background-color: #07E21D; */
-}
-.submitbtn{
-    max-width: 30%;
-}
+            <img src="./img/about_pic.png" class="img-fluid my-3" width="500px" height="500px" alt="">
+            <div class="aboutcontent">
+
+                <p class="fs-4 fw-bold "> is the best way to tell people about you without actually telling?</p>
+
+                <p>It's your portfolio, of course. We hope that everybody's getting a little more information about you
+                    in the form of links.</p>
+
+                <p class="fs-4 fw-bold">How do you create a visual profile, your personal style, or the kind of things that you do in your
+                    head?</p>
+
+                <p>We have a team of designers / developers who are dedicated to getting you the best possible personal
+                    portfolio.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Sections  -->
+    <section id="Features">
+        <div class="container-fluid pt-1 pb-5">
+            <h1 class="text-center my-5 f1">Features</h1>
+            <div class="row gy-5 mx-5 f1 ">
+                <div class="col-sm columncollapse"></div>
+                <div class="col-sm  ">
+                    <div class="card h-100 Featurescard1 Featurescard ">
+                        <div class="card-body">
+                            <img src="./img/easyTouse.png" class="img-fluid py-3" alt="">
+                            <h5 class="card-title text-center">Simple and Easy to Use</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm ">
+                    <div class="card h-100 Featurescard2 Featurescard">
+                        <div class="card-body">
+                            <img src="./img/FastAndQuick.png" class="img-fluid py-3 " alt="">
+                            <h5 class="card-title text-center ">Super fast and quick</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm ">
+                    <div class="card h-100 Featurescard3 Featurescard">
+                        <div class="card-body">
+                            <img src="./img/Creative.png" class="img-fluid py-3" alt="">
+                            <h5 class="card-title text-center">Creative & beautiful design</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm ">
+                    <div class="card h-100 Featurescard4 Featurescard">
+                        <div class="card-body">
+                            <img src="./img/Responsive.png" class="img-fluid py-3" alt="">
+                            <h5 class="card-title text-center">Responsive Layout</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm columncollapse"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+
+    <section id="Team" class="OurTeam my-5">
+        <div class="text-center my-5">
+            <h1 class="f1"> Our Team </h1>
+            <h4 class="mt-5 mx-5">Our team is always here to help you out.</h4>
+        </div>
+        <div class="container pt-1 pb-5">
+            <div class="row gy-5 mx-5">
+                <div class="col-sm columncollapse">
+                </div>
+                <div class="col-sm ">
+                    <div class="card h-100 text-dark bg-light">
+                        <img src="./img/profile.jpg" height="auto" width="200px" class=" card-img-top p-3" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title f1">Divyesh Vyas</h5>
+                            <h6>Web developer</h6>
+                            <div class="socialmedia my-3">
+                                <a href="#" class="btn"><img src="./img/instagram.png" alt=""></a>
+                                <a href="#" class="btn"><img src="./img/github.png" alt=""></a>
+                                <a href="#" class="btn"><img src="./img/linkedin.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card h-100 text-dark bg-light">
+                        <img src="./img/profile.jpg" height="auto" width="200px" class="card-img-top p-3" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title f1">Card title</h5>
+                            <h6>Web developer</h6>
+
+                            <div class="socialmedia my-3">
+                                <a href="#" class="btn"><img src="./img/instagram.png" alt=""></a>
+                                <a href="#" class="btn"><img src="./img/github.png" alt=""></a>
+                                <a href="#" class="btn"><img src="./img/linkedin.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm columncollapse"></div>
+            </div>
+        </div>
+    </section>
 
 
-/* Footer section */
+    <!-- FAQs Section -->
+    <section id="FAQs" class="py-5">
+        <h1 class="text-center f1"> FAQs </h1>
+        <div class="container my-5 px-5">
+            <div class="row justify-content-center ">
+                <div class="col-sm-8">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item my-2">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Accordion Item #1
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item my-2">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Accordion Item #2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item my-2">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item my-2">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item my-2">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+
+    <section id="Contact" class="py-4">
+
+        <div class="container">
+            <h1 class="text-center f1">Contact form</h1>
+            <div class="row justify-content-center my-5 mx-2 ">
+            <form id="contactForm" action="#">
+                <div class="row justify-content-center">
+                    <div class="mb-3 ">
+                        <label for="Name" class="col-sm col-form-label">Name : </label>
+                        <input type="text" class="form-control" id="Name" placeholder="Enter your name">
+                
+                    </div>
+                    <div class="mb-3 ">
+                        <label for="email" class="col-sm col-form-label">Email : </label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    
+                    </div>
+                    <div class="mb-3 ">
+                        <label for="title" class="col-sm col-form-label">Title : </label>
+                       <input type="text" class="form-control" id="title" placeholder="Enter title">
+                    
+                    </div>
+                    <div class="mb-3 ">
+                        <label for="message" class="col-sm col-form-label">message : </label>
+                        <textarea class="form-control" placeholder="Write your query here" id="message" cols="20"
+                                rows="5"></textarea>
+                  
+                    </div>
+                    <input class="btn btn-primary submitbtn " type="submit" value="Submit">
+
+                </div>
+            </form>
+        </div>
+        </div>
+    </section>
 
 
-#Footer{
 
-    background-color: black;
-    color: #eebdbd;
-}
+    <!-- Footer Section -->
 
-/* Responsive */
+<footer id="Footer" class="container-fluid pt-3">
 
-@media (max-width: 900px) {
-    #home{
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        padding:50px;
-        padding-top: 10px;
-    }
-    nav{
-        padding-left: 0%;
-    }
+        <div class="row  justify-content-around">
 
-    .content{
-        width: 80%;
-        top: 0%;
-    }
-    #home img{
-        right: 0%;
-        width: 70%;
-        top: -10%;
+            <div class="col-sm-4 text-center">
+                <h5 class="f1">About Us</h5>
+                <p>We are part of DIY Intern. We help build your portfolio to make you stand out without any hasssle</p>
+            </div>
+            
+            <div class="col-sm-4 text-center">
+                <h5 class="f1">Phone-No : </h5>
+                <p>+91-1234567881</p>
+            </div>
 
-    } 
-    .content h1{
-        font-size: 2rem;
-        /* font-weight: 800; */
-    }
+            <div class="col-sm-3 text-center ">
+                <h5 class="f1"> Follow Us </h5> 
+                    <a href="#" class="btn"><img src="./img/instagram.png" alt=""></a>
+                    <a href="#" class="btn"><img src="./img/gmail.png" alt=""></a>
+                    <a href="#" class="btn"><img src="./img/linkedin.png" alt=""></a>
+            </div>
+        </div>
+        <div id="Copyright" class="border-top border-white text-white text-center py-1">
+                <p> &copy; Copyright DIY Portfolio. All rights reserved</p>
+        </div>
 
-    .aboutcontent p{
-        font-size: 1rem;
-    }
+</footer>
 
-    .columncollapse{
-        display: none;
-    }
-    
-}
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
