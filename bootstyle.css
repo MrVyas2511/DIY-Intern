@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* HTML Properites */
+html {
+    scroll-behavior: smooth;
+  }
+  /* Font */
+
+  /* Title 1*/
+.f1{
+    font-family: 'Fredoka One', cursive;
+}
+/* Title 2 */
+.f2{
+    font-family: 'Tourney', cursive;
+
+}
+
+  /* Navbar */
+nav{
+    padding-left: 50px;
+}
+.nav-item{
+    align-items: center;  
+}
+.logo{
+   
+        text-align: center;
+    font-weight: bold;
+}
+.navbar-light .nav-item .nav-link:hover  {
+  background: #6f77e7;
+  color: #f1f1ee;
+}
+#home::before{
+    content: "";
+    background: url('./img/bg.png') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 115vh;
+    top: 0px;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    width: 100%;
+}
+
+#home img{
+    position: relative;
+    top: -10%;
+    right: -15%;
+    /* margin: 100px; */
+}
+.content h1{
+     padding-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 800;
+}
+.content p{
+    font-family: 'Source Serif Pro', serif;
+    padding-bottom: 20px;
+    font-size: large;
+}
+.content button{
+    padding: 10px;
+    font-weight: 900;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 5px 5px #6f77e7;
+    background-color: #ECAF12;
+}
+
+.content button:hover{
+    background-color: #6f77e7;
+    box-shadow: none;
+    padding: 15px;
+}
+.content{
+    position: relative;
+    left: 0%;
+    top: -10%;
+    width: 20%;
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+/* About Us */
+
+
+#about img{
+
+    border-radius: 70px;
+
+} 
+
+.aboutcontent{
+    padding: 40px 10px;
+
+}
+.aboutcontent p{
+    font-family: 'Rokkitt', serif;
+    font-size: 1.3rem;
+}
+
+/* Features CSS */
+
+#Features{
+    background-color: #e2ffd7;
+    /* height: 80vh; */
+    
+}
+
+.Featurescard{
+    box-shadow: 10px 10px 10px #c7aeaf;
+    font-weight: 900;
+}
+
+.Featurescard1{
+    background-color: #07E21D;
+
+}
+.Featurescard2{
+    background-color: #08F3F3;
+
+}
+.Featurescard3{
+    background-color: #F9A150;
+
+}
+.Featurescard4{
+    background-color: #08F3F3;
+
+}
+
+
+/* FAQs section */
+
+
+#FAQs{
+    background-color: #f6e6e6;
+}
+
+/* Contact section */
+
+#contactForm{
+    max-width: 500px;
+    border-radius: 50px;
+    background-color: #d198ff;
+    padding: 30px 50px;
+}
+
+#Contact{
+    /* background-color: #07E21D; */
+}
+.submitbtn{
+    max-width: 30%;
+}
+
+
+/* Footer section */
+
+
+#Footer{
+
+    background-color: black;
+    color: #eebdbd;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    #home{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding:50px;
+        padding-top: 10px;
+    }
+    nav{
+        padding-left: 0%;
+    }
+
+    .content{
+        width: 80%;
+        top: 0%;
+    }
+    #home img{
+        right: 0%;
+        width: 70%;
+        top: -10%;
+
+    } 
+    .content h1{
+        font-size: 2rem;
+        /* font-weight: 800; */
+    }
+
+    .aboutcontent p{
+        font-size: 1rem;
+    }
+
+    .columncollapse{
+        display: none;
+    }
+    
+}
