@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+
 /* HTML Properites */
 html {
     scroll-behavior: smooth;
@@ -15,22 +18,23 @@ html {
 }
 /* Title 2 */
 .f2{
-    font-family: 'Tourney', cursive;
-
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
-  /* Navbar */
+
+
+/* Navbar */
 nav{
     padding-left: 50px;
 }
 .nav-item{
     align-items: center;  
 }
-.logo{
-   
-        text-align: center;
+.logo{   
+    text-align: center;
     font-weight: bold;
 }
+
 .navbar-light .nav-item .nav-link:hover  {
   background: #6f77e7;
   color: #f1f1ee;
@@ -51,7 +55,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110vh;
+    height: 105vh;
     width: 100%;
 }
 
@@ -76,7 +80,8 @@ nav{
     font-weight: 900;
     border-radius: 30px;
     border: none;
-    box-shadow: 5px 5px #6f77e7;
+    transition: 0.5s;
+    box-shadow: 4px 4px #bcc0fd;
     background-color: #ECAF12;
 }
 
@@ -104,15 +109,63 @@ nav{
     border-radius: 70px;
 
 } 
-
-.aboutcontent{
-    padding: 40px 10px;
-
+.aboutCard{
+    cursor: pointer;
+    transition: 0.5s;
 }
+.aboutcontent{
+    background-color: rgb(240 243 250);
+    border-radius: 30px;
+    box-shadow: 0 0px 5px 5px rgb(255 209 255);
+    padding: 20px 0px;
+}
+.aboutCard:hover{
+        background-color: #f8daff;
+        box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2);    
+}
+
 .aboutcontent p{
     font-family: 'Rokkitt', serif;
     font-size: 1.3rem;
 }
+
+/* flip card */
+
+.card-flip > div {
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
+  }
+  
+.card-front {
+   
+    transform: rotateY(0deg);
+  }
+
+.card-back {
+    
+    color: powderblue;
+    background-color: #003787;
+    transform: rotateY(180deg);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    top: 0;
+    left: 0%;
+}
+  
+.card-flip:hover .card-front {
+    transform: rotateY(-180deg);
+}
+    
+.card-flip:hover .card-back {
+    transform: rotateY(0deg);
+  }
+
 
 /* Features CSS */
 
@@ -123,10 +176,15 @@ nav{
 }
 
 .Featurescard{
-    box-shadow: 10px 10px 10px #c7aeaf;
+
+    transition: 0.5s;
+    
     font-weight: 900;
 }
+.Featurescard:hover{
+    box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2);
 
+}
 .Featurescard1{
     background-color: #07E21D;
 
@@ -143,6 +201,10 @@ nav{
     background-color: #08F3F3;
 
 }
+/* Team */
+
+
+
 
 
 /* FAQs section */
@@ -177,6 +239,8 @@ nav{
     background-color: black;
     color: #eebdbd;
 }
+
+
 
 /* Responsive */
 

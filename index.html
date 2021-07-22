@@ -15,6 +15,8 @@
 
 
     <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,800;1,800&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 
@@ -22,9 +24,10 @@
 
 
     <!-- Navabar section  -->
+
     <nav class="sticky-top navbar navbar-expand-lg navbar-light  ">
         <div class="container-fluid d-flex justify-content-between ">
-            <a class="navbar-brand logo fs-2 f2" href="#">
+            <a class="navbar-brand logo fs-3 f2" href="#">
                 <img src="./img/logo.png" alt="" width="60" height="40">
                 DIY-Portfolio
             </a>
@@ -46,13 +49,13 @@
                         <a class="nav-link px-3 rounded-pill " href="#Features">Features</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link px-3 rounded-pill" href="#">Team</a>
+                        <a class="nav-link px-3 rounded-pill" href="#Team">Team</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link px-3 rounded-pill " href="#">FAQs</a>
+                        <a class="nav-link px-3 rounded-pill " href="#FAQs">FAQs</a>
                     </li>
                     <li class="nav-item px-3">
-                        <button type="button" class="btn btn-primary py-2 px-4 rounded-pill ">Contact</button>
+                        <a class="btn btn-primary py-2 px-4 rounded-pill " href="#Contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -63,31 +66,27 @@
     <section id="home">
         <div class="content">
             <h1>Have Portfolio Your Way</h1>
-            <p >We help build your portfolio to make you stand out without any hasssle</p>
+            <p>We help build your portfolio to make you stand out without any hasssle</p>
             <button> Create Portfolio </button>
         </div>
         <img src="./img/Frame.png" class="img-fluid py-3" width="400px" height="400px" alt="">
     </section>
 
-
-
     <!-- About Section -->
-    <section id="about" class="container">
+    <section id="about" class="container my-5">
 
         <h1 class="text-center f1">About Us</h1>
         <div class="container d-flex-column justify-content-center text-center">
 
-            <img src="./img/about_pic.png" class="img-fluid my-3" width="500px" height="500px" alt="">
-            <div class="aboutcontent">
+            <img src="./img/about_pic.png" class="img-fluid my-3" width="400px" height="400px" alt="">
+            <div class="aboutcontent p-5">
 
-                <p class="fs-4 fw-bold "> is the best way to tell people about you without actually telling?</p>
-
-                <p>It's your portfolio, of course. We hope that everybody's getting a little more information about you
+                <p class="fs-4 fw-bold "> Is the best way to tell people about you without actually telling?</p>
+                <p>Yes, It's your portfolio, of course. We hope that everybody's getting a little more information about you
                     in the form of links.</p>
-
-                <p class="fs-4 fw-bold">How do you create a visual profile, your personal style, or the kind of things that you do in your
+                <p class="fs-4 fw-bold">How do you create a visual profile, your personal style, or the kind of things
+                    that you do in your
                     head?</p>
-
                 <p>We have a team of designers / developers who are dedicated to getting you the best possible personal
                     portfolio.</p>
             </div>
@@ -98,11 +97,11 @@
     <section id="Features">
         <div class="container-fluid pt-1 pb-5">
             <h1 class="text-center my-5 f1">Features</h1>
-            <div class="row gy-5 mx-5 f1 ">
+            <div class="row gy-5 mx-5 f2 ">
                 <div class="col-sm columncollapse"></div>
                 <div class="col-sm  ">
                     <div class="card h-100 Featurescard1 Featurescard ">
-                        <div class="card-body">
+                        <div class="card-body m-auto" width="100%">
                             <img src="./img/easyTouse.png" class="img-fluid py-3" alt="">
                             <h5 class="card-title text-center">Simple and Easy to Use</h5>
                         </div>
@@ -110,7 +109,7 @@
                 </div>
                 <div class="col-sm ">
                     <div class="card h-100 Featurescard2 Featurescard">
-                        <div class="card-body">
+                        <div class="card-body m-auto" width="100%">
                             <img src="./img/FastAndQuick.png" class="img-fluid py-3 " alt="">
                             <h5 class="card-title text-center ">Super fast and quick</h5>
                         </div>
@@ -118,7 +117,7 @@
                 </div>
                 <div class="col-sm ">
                     <div class="card h-100 Featurescard3 Featurescard">
-                        <div class="card-body">
+                        <div class="card-body m-auto" width="100%">
                             <img src="./img/Creative.png" class="img-fluid py-3" alt="">
                             <h5 class="card-title text-center">Creative & beautiful design</h5>
                         </div>
@@ -126,7 +125,7 @@
                 </div>
                 <div class="col-sm ">
                     <div class="card h-100 Featurescard4 Featurescard">
-                        <div class="card-body">
+                        <div class="card-body m-auto" width="100%">
                             <img src="./img/Responsive.png" class="img-fluid py-3" alt="">
                             <h5 class="card-title text-center">Responsive Layout</h5>
                         </div>
@@ -138,41 +137,64 @@
     </section>
 
     <!-- Team Section -->
-
     <section id="Team" class="OurTeam my-5">
         <div class="text-center my-5">
             <h1 class="f1"> Our Team </h1>
-            <h4 class="mt-5 mx-5">Our team is always here to help you out.</h4>
+            <h4 class="mt-5 mx-5 f2">Our team is always here to help you out.</h4>
         </div>
         <div class="container pt-1 pb-5">
             <div class="row gy-5 mx-5">
                 <div class="col-sm columncollapse">
                 </div>
-                <div class="col-sm ">
+                <div class="col-sm">
                     <div class="card h-100 text-dark bg-light">
-                        <img src="./img/profile.jpg" height="auto" width="200px" class=" card-img-top p-3" alt="...">
-                        <div class="card-body text-center">
-                            <h5 class="card-title f1">Divyesh Vyas</h5>
-                            <h6>Web developer</h6>
+                        <div class="aboutCard  card-body text-center">
+                            <div class="card-flip">
+                                <div class="card-front">
+                                    <img src="./img/profile.jpg" height="auto" width="200px" class=" card-img-top"
+                                        alt="...">
+                                    <h5 class="card-title f1 mt-3">Divyesh Vyas</h5>
+                                    <h6>Web developer</h6>
+                                </div>
+
+                                <div class="card-back p-5">
+                                    <h3 class="card-title">Introducation</h3>
+                                    <p class="card-text"> Hello,This is divyesh vyas competitive programming
+                                        enthusiast.and i am also exploring web development and android developmenent
+                                        too. </p>
+                                </div>
+                            </div>
                             <div class="socialmedia my-3">
-                                <a href="#" class="btn"><img src="./img/instagram.png" alt=""></a>
-                                <a href="#" class="btn"><img src="./img/github.png" alt=""></a>
-                                <a href="#" class="btn"><img src="./img/linkedin.png" alt=""></a>
+                                <a href="https://www.instagram.com/_mr._.vyas_/" class="btn" target="_blank"><img
+                                        src="./img/instagram.png" alt="" target="_blank"></a>
+                                <a href="https://github.com/MrVyas2511" class="btn" target="_blank"><img src="./img/github.png" alt=""></a>
+                                <a href="https://www.linkedin.com/in/d-vyesh-vyas-823442190/" class="btn" target="_blank"><img src="./img/linkedin.png" alt=""></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm">
                     <div class="card h-100 text-dark bg-light">
-                        <img src="./img/profile.jpg" height="auto" width="200px" class="card-img-top p-3" alt="...">
-                        <div class="card-body text-center">
-                            <h5 class="card-title f1">Card title</h5>
-                            <h6>Web developer</h6>
+                        <div class="aboutCard  card-body text-center ">
+                            <div class="card-flip">
+                                <div class="card-front">
+                                    <img src="./img/profile.jpg" height="auto" width="200px" class="card-img-top"
+                                        alt="...">
+                                    <h5 class="card-title f1 mt-3">Card title</h5>
+                                    <h6>Web developer</h6>
+                                </div>
 
+                                <div class="card-back p-5">
+                                    <h3 class="card-title">Introducation</h3>
+                                    <p class="card-text"> Hello,This is divyesh vyas competitive programming
+                                        enthusiast.and i am also exploring web development and android developmenent
+                                        too. </p>
+                                </div>
+                            </div>
                             <div class="socialmedia my-3">
-                                <a href="#" class="btn"><img src="./img/instagram.png" alt=""></a>
-                                <a href="#" class="btn"><img src="./img/github.png" alt=""></a>
-                                <a href="#" class="btn"><img src="./img/linkedin.png" alt=""></a>
+                                <a href="#" class="btn" target="_blank"><img src="./img/instagram.png" alt=""></a>
+                                <a href="#" class="btn" target="_blank"><img src="./img/github.png" alt=""></a>
+                                <a href="#" class="btn" target="_blank"><img src="./img/linkedin.png" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -194,18 +216,13 @@
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    Accordion Item #1
+                                   <strong> Why Portfolio is needed?</strong>
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    A portfolio is a living and changing collection of records that reflect your accomplishments, skills, experiences, and attributes. It highlights and showcases samples of some of your best work, along with life experiences, values and achievements.
                                 </div>
                             </div>
                         </div>
@@ -214,18 +231,13 @@
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Accordion Item #2
+                                   <strong> What we are providing?</strong>
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    We are providing you platform where you can create a portfolio in just one click of mouse your mouse.
                                 </div>
                             </div>
                         </div>
@@ -234,50 +246,40 @@
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Accordion Item #3
+                                   <strong> How to use DIY-Portfolio website?</strong>
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    It is very simple. Just enter in thi site-> Click on the the <Span>Create portfolio</Span> Button -> Insert your data -> get your portfolio link ready.
                                 </div>
                             </div>
                         </div>
 
                         <div class="accordion-item my-2">
-                            <h2 class="accordion-header" id="headingThree">
+                            <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Accordion Item #3
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Accordion Item #4
                                 </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <strong>This is the third item's accordion body.</strong>
                                 </div>
                             </div>
                         </div>
 
                         <div class="accordion-item my-2">
-                            <h2 class="accordion-header" id="headingThree">
+                            <h2 class="accordion-header" id="headingFive">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Accordion Item #3
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Accordion Item #5
                                 </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <strong>This is the third item's accordion body.</strong> It is hidden by default,
@@ -297,74 +299,72 @@
         </div>
     </section>
 
-    <!-- Contact Form -->
 
+    <!-- Contact Form -->
     <section id="Contact" class="py-4">
 
         <div class="container">
             <h1 class="text-center f1">Contact form</h1>
             <div class="row justify-content-center my-5 mx-2 ">
-            <form id="contactForm" action="#">
-                <div class="row justify-content-center">
-                    <div class="mb-3 ">
-                        <label for="Name" class="col-sm col-form-label">Name : </label>
-                        <input type="text" class="form-control" id="Name" placeholder="Enter your name">
-                
-                    </div>
-                    <div class="mb-3 ">
-                        <label for="email" class="col-sm col-form-label">Email : </label>
-                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                    
-                    </div>
-                    <div class="mb-3 ">
-                        <label for="title" class="col-sm col-form-label">Title : </label>
-                       <input type="text" class="form-control" id="title" placeholder="Enter title">
-                    
-                    </div>
-                    <div class="mb-3 ">
-                        <label for="message" class="col-sm col-form-label">message : </label>
-                        <textarea class="form-control" placeholder="Write your query here" id="message" cols="20"
-                                rows="5"></textarea>
-                  
-                    </div>
-                    <input class="btn btn-primary submitbtn " type="submit" value="Submit">
+                <form id="contactForm" action="#">
+                    <div class="row justify-content-center">
+                        <div class="mb-2 ">
+                            <label for="Name" class="col-sm col-form-label">Name : </label>
+                            <input type="text" class="form-control" id="Name" placeholder="Enter your name">
 
-                </div>
-            </form>
-        </div>
+                        </div>
+                        <div class="mb-2 ">
+                            <label for="email" class="col-sm col-form-label">Email : </label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+
+                        </div>
+                        <div class="mb-2 ">
+                            <label for="title" class="col-sm col-form-label">Title : </label>
+                            <input type="text" class="form-control" id="title" placeholder="Enter title">
+
+                        </div>
+                        <div class="mb-2 ">
+                            <label for="message" class="col-sm col-form-label">Message : </label>
+                            <textarea class="form-control" placeholder="Write your query here" id="message" cols="20"
+                                rows="5"></textarea>
+
+                        </div>
+                        <input class="btn btn-primary submitbtn " type="submit" value="Submit">
+
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
 
-
     <!-- Footer Section -->
-
-<footer id="Footer" class="container-fluid pt-3">
+    <footer id="Footer" class="container-fluid pt-3">
 
         <div class="row  justify-content-around">
 
             <div class="col-sm-4 text-center">
                 <h5 class="f1">About Us</h5>
-                <p>We are part of DIY Intern. We help build your portfolio to make you stand out without any hasssle</p>
+                <p>We are part of DIY Intern. We help build your portfolio to make you stand out without any hasssle.</p>
             </div>
-            
+
             <div class="col-sm-4 text-center">
                 <h5 class="f1">Phone-No : </h5>
                 <p>+91-1234567881</p>
             </div>
 
             <div class="col-sm-3 text-center ">
-                <h5 class="f1"> Follow Us </h5> 
-                    <a href="#" class="btn"><img src="./img/instagram.png" alt=""></a>
-                    <a href="#" class="btn"><img src="./img/gmail.png" alt=""></a>
-                    <a href="#" class="btn"><img src="./img/linkedin.png" alt=""></a>
+                <h5 class="f1"> Follow Us </h5>
+                <a href="https://www.instagram.com/diyintern/" class="btn" target="_blank"><img src="./img/instagram.png" alt=""></a>
+                <a href="#" class="btn" target="_blank"><img src="./img/gmail.png" alt=""></a>
+                <a href="https://www.linkedin.com/company/diy-intern/" target="_blank" class="btn"><img src="./img/linkedin.png" alt=""></a>
             </div>
         </div>
         <div id="Copyright" class="border-top border-white text-white text-center py-1">
-                <p> &copy; Copyright DIY Portfolio. All rights reserved</p>
+            <p> &copy; Copyright DIY Portfolio. All rights reserved</p>
         </div>
 
-</footer>
+    </footer>
 
 
     <!-- Optional JavaScript; choose one of the two! -->
