@@ -1,0 +1,135 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    right: 0%;
+    box-sizing: border-box;
+}
+
+/* Navbar design */
+
+.navbar{
+    background-color: #7DEDFF;
+    padding: 3px;
+}
+.dropdown-menu {
+    width: 300px !important;
+    height: 400px !important;
+}
+.navmenu{
+    font-size: large;
+}
+.nav-link:hover{
+    background-color: #ffffff;
+
+} 
+.dropdown.nav-item:hover .dropdown-menu{display:block; }
+
+/* About Yourself section */
+#aboutYourself{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.aboutcontainer{
+    border-radius: 30px;
+    background-color: #0AB1F9;
+}
+
+
+/* skills section */
+
+#skills{
+    background-color: rgb(154, 225, 228);
+}
+.listitem{
+    width: auto; 
+    font-size: 0.9rem;
+}
+#cancleSkill{
+    padding: 0px 5px;
+    background-color: #ffffff;
+    border: none;
+}
+
+/* Education Section */
+
+.eduList{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+.educationdetail{
+    background-color: white;
+}
+#educationSection{
+    background-color: #0FEACF;
+}
+
+/* Experience Section */
+
+#experienceSection{
+    margin: 50px 0px;
+    padding: 50px 0px;
+    background: linear-gradient(180deg, #F318EB 0%, rgba(49, 99, 157, 0.537249) 60.73%, rgba(105, 55, 153, 0.252237) 99.99%, rgba(154, 16, 149, 0) 100%);
+}
+
+.expCard{
+    background-color: #90faee;
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+}
+
+.cirtificateList{
+ 
+    max-height: 500px;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    overflow-y: auto;
+    
+ 
+}
+
+.cirtiDetail{
+    border: 2px solid black;
+    margin: 5px;
+}
+/* Accomplishment */
+
+#accList{
+    background-color: #0FEACF;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+/* Project section */
+#project{
+    background-color: #ABFFB3;
+   
+}
+#projectList{
+    background-color: #ffffff;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+}
+
+.Preview{
+    background-color: #0AB1F9;
+    height: 40vh;
+    margin: 10px;
+}
+#Previewsection{
+    height: 70vh;
+}
+ 
+#Footer{
+
+    background-color: black;
+    color: #eebdbd;
+}
